@@ -20,9 +20,10 @@ Description: The Lambda function fetches all EBS snapshots owned by the same acc
 
 ## Succeeded 
 (At this point, the snapshot won't be deleted because it's still attached to a volume. However, once the instance (and the associated volume) is deleted, the snapshot will become orphaned. You can also set any condition in the code to handle this scenario.)
+
 ![image](https://github.com/user-attachments/assets/c9ee1538-4f27-4fb8-b92a-3418f1aae4db)
 
-## By re-running the Lambda function after the instance and volume are removed, the snapshot will be deleted automatically, as it will no longer be attached to any volume.
+By re-running the Lambda function after the instance and volume are removed, the snapshot will be deleted automatically, as it will no longer be attached to any volume.
 ![image](https://github.com/user-attachments/assets/7c83719b-bc00-4918-9d79-20a8dadb5876)
 
 
